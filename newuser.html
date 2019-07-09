@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Nouvel Utilisateur</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" media="all" />
+</head>
+
+<body class="container">
+	<h1 class="h1 pt-4 pb-2">Inscription</h1>
+	<form action="http://localhost:3000/addUser" method="post" class="col-md-8 mx-auto mt-4">
+		<fieldset class="form-group">
+			<legend>Coordonnées : </legend>
+			<div class="form-check form-check-inline">
+				<input type="radio" class="form-check-input" name="civilite" id="radiom" value="m" />
+				<label class="form-check-label" for="radiom">Monsieur</label>
+
+				<input type="radio" class="form-check-input ml-3" name="civilite" id="radiom" value="f" />
+				<label class="form-check-label" for="radiom">Madame</label>
+			</div>
+			<label for="idName" class="form-text">Prénom : </label><input type="text" class="form-control" id="idName"
+				name="name" placeholder="Entrez votre prénom">
+			<label for="idLastName" class="form-text">Nom : </label><input type="text" class="form-control"
+				id="idLastName" name="lastName" placeholder="Entrez votre nom">
+			<label for="idPseudo" class="form-text">Pseudo : </label><input type="text" class="form-control"
+				id="idPseudo" name="pseudo" placeholder="Choisissez un pseudo">
+		</fieldset>
+		<fieldset class="form-group">
+			<legend>Vos indentifiants : </legend>
+			<label for="idMail" class="form-text">Adresse mail : </label><input type="mail" class="form-control"
+				id="idMail" name="mail" placeholder="Entrez votre adresse mail">
+			<label for="idConfMail" class="form-text">Confirmation l'adresse mail : </label><input type="mail"
+				class="form-control" id="idConfMail" name="confMail" placeholder="Confirmez votre adresse mail">
+			<label for="idMdp" class="form-text">Mot de passe : </label><input type="password" class="form-control"
+				id="idMdp" name="mdp" placeholder="Entrez un mot de passe">
+			<label for="idConfMdp" class="form-text">Confirmation du mot de passe : </label><input type="password"
+				class="form-control" id="idConfMdp" name="mdpconfirm" placeholder="Confirmez votre mot de passe">
+		</fieldset>
+		<input type="submit" class="btn btn-primary" value="Créer le compte">
+	</form>
+	<footer class="page-footer pt-4">
+		<p>© Nanterre Chat - Dev/Data</p>
+	</footer>
+</body>
+
+</html>
